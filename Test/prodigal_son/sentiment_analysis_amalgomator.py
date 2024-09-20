@@ -17,7 +17,7 @@ emotions = [
 ]
 
 # Path to the folder containing the text files
-folder_path = os.path.expanduser('/home/drew/Desktop/Test/prodigal_son/resurrection_texts')
+folder_path = os.path.expanduser('/home/drew/Desktop/GitHub/SAFiles/Test/prodigal_son/jonah_texts')
 
 # Get the list of text files in the folder
 files = ['nasb95.txt', 'nlt.txt', 'esv.txt', 'kjv.txt', 'nkjv.txt', 'csb.txt', 'lsb.txt', 'niv84.txt']
@@ -53,7 +53,7 @@ results_df['mean'] = results_df['mean'].map('{:.2f}'.format)
 results_df['std_dev'] = results_df['std_dev'].map('{:.2f}'.format)
 
 # Save to CSV
-output_file = '/home/drew/Desktop/Test/prodigal_son/Results/resurrection_results.csv'
+output_file = '/home/drew/Desktop/GitHub/SAFiles/Results/jonah_results.csv'
 results_df.to_csv(output_file, index=False)
 
 print("Results saved to:", output_file)
